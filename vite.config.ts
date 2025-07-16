@@ -8,13 +8,15 @@ export default defineConfig({
     federation({
       name: 'container',
       remotes: {
-        plp: 'http://localhost:5004/assets/remoteEntry.js',
-        pdp: 'http://localhost:5005/assets/remoteEntry.js',
+        plp: 'https://plppage-blue.vercel.app/assets/remoteEntry.js',
+        pdp: 'https://pdppage.vercel.app/assets/remoteEntry.js',
       },
       shared: ['react', 'react-dom', 'react-router-dom'],
     }),
   ],
-
+  server: {
+    cors: false,
+  },
   build: {
     modulePreload: false,
     target: 'esnext',
