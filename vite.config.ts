@@ -20,6 +20,9 @@ export default defineConfig({
         plp: 'https://plppage-blue.vercel.app/assets/remoteEntry.js',
         pdp: 'https://pdppage.vercel.app/assets/remoteEntry.js',
       },
+       exposes: {
+        './App': './src/App.tsx',
+      },
         shared: ['react', 'react-dom', 'react-router-dom'],
     }),
   ],
