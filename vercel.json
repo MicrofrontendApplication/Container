@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/(.*)",   
+      "source": "/(.*)",
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
@@ -9,13 +9,23 @@
         },
         {
           "key": "Access-Control-Allow-Methods",
-          "value": "GET,OPTIONS"
+          "value": "GET, OPTIONS, POST, PUT, DELETE"
         },
         {
           "key": "Access-Control-Allow-Headers",
-          "value": "*"
+          "value": "Content-Type, Authorization, X-Requested-With"
         }
       ]
     }
-  ]
+  ],
+  "builds": [
+    {
+      "src": "vite.config.js",
+      "use": "@vercel/static-build",
+      "config": {
+        "zeroConfig": true
+      }
+    }
+  ],
+  "cache": false
 }
