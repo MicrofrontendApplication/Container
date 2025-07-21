@@ -5,23 +5,27 @@ import federation from '@originjs/vite-plugin-federation'
 export default defineConfig({
   plugins: [
     react(),
-    
+
     federation({
       name: 'container',
       remotes: {
-        plp: 'https://plppage.onrender.com/assets/remoteEntry.js',
-        pdp: 'https://pdppage.onrender.com/assets/remoteEntry.js',
+        // plp: 'https://plppage.onrender.com/assets/remoteEntry.js',
+        // pdp: 'https://pdppage.onrender.com/assets/remoteEntry.js',
+
+        plp: 'http://localhost:5004/assets/remoteEntry.js',
+        pdp: 'http://localhost:5005/assets/remoteEntry.js',
+
       },
-      shared: ['react', 'react-dom', 'react-router-dom'],
+        shared: ['react', 'react-dom', 'react-router-dom'],
     }),
   ],
-  server: {
-    cors: false,
-  },
+
   build: {
-    modulePreload: false,
+    
+
     target: 'esnext',
     minify: false,
-    cssCodeSplit: false,
+    cssCodeSplit: true,
+  
   },
 })
