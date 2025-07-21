@@ -8,6 +8,7 @@ export default defineConfig({
 
     federation({
       name: 'container',
+       filename: 'remoteEntry.js',
       remotes: {
         // plp: 'https://plppage.onrender.com/assets/remoteEntry.js',
         // pdp: 'https://pdppage.onrender.com/assets/remoteEntry.js',
