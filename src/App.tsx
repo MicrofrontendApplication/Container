@@ -1,27 +1,24 @@
-import React, { Suspense, useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { Suspense } from "react";
+import { HashRouter, Routes, Route, BrowserRouter } from "react-router-dom";
 
+// import { MyDayPicker } from "microfrontend";
 import "microfrontend/microfrontend.min.css";
 
-const PlpApp = React.lazy(() => import('plp/PlpPage'));
-const PdpApp = React.lazy(() => import('pdp/PdpPage'));
+// Lazy-load your remote components
+const PlpApp = React.lazy(() => import("plp/PlpPage"));
+const PdpApp = React.lazy(() => import("pdp/PdpPage"));
 
-const App = () => {
- 
+export default function App() {
   return (
-    <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={  
-            <PlpApp></PlpApp>
-          } />
-          <Route path="/pdp/:id" element={<PdpApp />} />
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
-
-
+    <>
+      <HashRouter>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<PlpApp />} />
+            <Route path="/pdp/:id" element={<PdpApp />} />
+          </Routes>
+        </Suspense>
+      </HashRouter>
+    </>
   );
-};
-
-export default App;
+}
