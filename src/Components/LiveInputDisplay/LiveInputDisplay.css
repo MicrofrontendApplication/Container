@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  max-width: 400px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.text-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.text-input:focus {
+  border-color: #007bff;
+}
+
+.floating-box {
+  position: absolute;
+  left: 10px;
+  top: 60px; /* Adjust based on input height + margin */
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  /* white-space: normal; allow wrapping */
+  font-size: 14px;
+  /* pointer-events: none;
+  user-select: none; */
+  transition: opacity 0.3s ease;
+  min-width: 150px; /* minimum width */
+  max-width: 500px; /* maximum width */
+  word-wrap: break-word; /* break long words if needed */
+}
