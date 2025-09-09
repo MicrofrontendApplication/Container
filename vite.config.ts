@@ -9,8 +9,11 @@ export default defineConfig({
     federation({
       name: "container",
       remotes: {
-        plp: "http://localhost:5004/assets/remoteEntry.js",
-        pdp: "http://localhost:5005/assets/remoteEntry.js",
+        // plp: "http://localhost:5004/assets/remoteEntry.js",
+        // pdp: "http://localhost:5005/assets/remoteEntry.js",
+
+          plp: "https://plppage1.vercel.app/assets/remoteEntry.js",
+           pdp: "https://pdppage1.vercel.app/assets/remoteEntry.js",
       },
       shared: ['react', 'react-dom', 'react-router-dom'],
   

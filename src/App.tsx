@@ -32,7 +32,7 @@ export default function App() {
     <>
       <div>
         <h1>Container App</h1>
-        <LiveInputDisplay />
+
       </div>
       {/* <BrowserRouter>
         <Suspense fallback={<div>Loading...</div>}>
