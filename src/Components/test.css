@@ -1,4 +1,4 @@
-.cart{
+/* .cart{
     height: 300px;
     width: 300px;
     background-color: #ccd0d0;
@@ -17,4 +17,48 @@
 }
 .head{
     color: aqua;
+} */
+
+
+
+/* 
+.container {
+    width: 100%;
+   
+    max-width: 400px;
+
+    
 }
+
+
+@media (min-width: 640px) {
+    .container {
+      max-width: 680px;
+     
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1000px;
+      
+          min-width: 786px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1250px;
+     
+          min-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1300px;
+        background-color: turquoise;
+
+          min-width: 1280px;
+    }
+} */
