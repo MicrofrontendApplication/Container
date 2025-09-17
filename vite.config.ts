@@ -12,8 +12,9 @@ export default defineConfig({
         // plp: "http://localhost:5004/assets/remoteEntry.js",
         // pdp: "http://localhost:5005/assets/remoteEntry.js",
 
-          plp: "https://plppage3.vercel.app/assets/remoteEntry.js",
-           pdp: "https://pdppage3.vercel.app/assets/remoteEntry.js",
+          plp: "https://plppage4.vercel.app/assets/remoteEntry.js",
+           pdp: "https://pdppage4.vercel.app/assets/remoteEntry.js",
+
       },
       shared: ['react', 'react-dom', 'react-router-dom','react-redux','@reduxjs/toolkit'],
   
