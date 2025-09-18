@@ -1,18 +1,10 @@
 
-// import { MyDayPicker } from "microfrontend";
-import "microfrontend/microfrontend.min.css";
-import Test from "./Components/Test";
-import LiveInputDisplay from "./Components/LiveInputDisplay";
-import { eventBus } from "./eventBus";
 
-import React from "react";
+import "microfrontend/microfrontend.min.css";
 
 import { RouterProvider } from "react-router-dom";
 import router from "./routes";
 
-// Lazy-load your remote components
-const PlpApp = React.lazy(() => import("plp/PlpPage"));
-const PdpApp = React.lazy(() => import("pdp/PdpPage"));
 
 export default function App() {
   const remoteContainer = document.getElementById("remote-container");

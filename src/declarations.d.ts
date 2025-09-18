@@ -7,3 +7,8 @@ declare module 'pdp/PdpPage' {
   const PdpPage: React.ComponentType;
   export default PdpPage;
 }
+
+declare module 'Form/Form' {
+  const Form: React.ComponentType;
+  export default Form;
+}
